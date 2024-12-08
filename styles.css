@@ -1,0 +1,89 @@
+/* Reset dasar */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background: linear-gradient(to bottom, #E3F2FD, #BBDEFB); /* Gradien biru pastel */
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #1565C0;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    font-size: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation */
+nav {
+    background-color: #0D47A1;
+    padding: 10px 0;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+nav ul li {
+    margin: 0 15px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 20px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+nav ul li a:hover {
+    background-color: #42A5F5;
+    transform: scale(1.1);
+    border-radius: 5px;
+}
+
+/* Sections */
+main {
+    padding: 2rem;
+}
+section {
+    margin-bottom: 2rem;
+    padding: 2rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s ease-in-out forwards;
+}
+h2 {
+    color: #1565C0;
+    margin-bottom: 1rem;
+}
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+ul li {
+    margin: 10px 0;
+}
+
+/* Animasi */
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #0D47A1;
+    color: white;
+    padding: 1rem;
+}
